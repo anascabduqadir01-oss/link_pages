@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Official Anas's Links</title>
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --black:#0A0612;--purple:#7B2FF7;--purple-bright:#9D4EFF;--cyan:#22E0E0;
+  --white:#fff;
+  --dim:rgba(255,255,255,.18);--muted:rgba(255,255,255,.55);--body:rgba(255,255,255,.75);
+  --serif:'Playfair Display',serif;--sans:'Outfit',sans-serif;
+}
+body{
+  background:
+    radial-gradient(ellipse 60% 45% at 80% 8%, rgba(34,224,224,.35) 0%, transparent 60%),
+    radial-gradient(ellipse 90% 70% at 30% 0%, rgba(123,47,247,.55) 0%, transparent 65%),
+    var(--black);
+  color:var(--white);font-family:var(--sans);font-weight:400;
+  min-height:100vh;display:flex;flex-direction:column;align-items:center;
+  padding:40px 18px 28px;position:relative;overflow-x:hidden;
+}
+
+.profile{display:flex;flex-direction:column;align-items:center;text-align:center;margin-bottom:30px;margin-top:8px;position:relative;z-index:1;animation:fadeUp .5s ease both}
+.profile-name{font-family:var(--serif);font-size:25px;font-weight:700;letter-spacing:.3px;margin-bottom:7px}
+.profile-tag{font-size:11px;font-weight:600;letter-spacing:2.5px;text-transform:uppercase;color:var(--cyan)}
+
+.links{width:100%;max-width:340px;display:flex;flex-direction:column;gap:10px;position:relative;z-index:1}
+
+.link-card{
+  display:flex;align-items:center;gap:14px;
+  border:1px solid rgba(255,255,255,.22);background:rgba(255,255,255,.08);
+  backdrop-filter:blur(6px);
+  padding:14px 16px;text-decoration:none;color:var(--white);
+  transition:background .18s,border-color .18s,transform .15s;
+  animation:fadeUp .45s ease both;
+}
+.link-card:hover{background:rgba(255,255,255,.16);border-color:var(--cyan);transform:translateY(-2px) scale(1.015)}
+.link-card:nth-child(1){animation-delay:.04s}
+.link-card:nth-child(2){animation-delay:.08s}
+.link-card:nth-child(3){animation-delay:.12s}
+.link-card:nth-child(4){animation-delay:.16s}
+.link-card:nth-child(5){animation-delay:.2s}
+.link-card:nth-child(6){animation-delay:.24s}
+.link-card:nth-child(7){animation-delay:.28s}
+.link-card:nth-child(8){animation-delay:.32s}
+
+.link-icon{
+  width:38px;height:38px;flex-shrink:0;border-radius:50%;
+  background:linear-gradient(135deg,var(--purple-bright),var(--purple));color:var(--white);
+  display:flex;align-items:center;justify-content:center;
+}
+.link-icon svg{width:18px;height:18px}
+
+.link-text{display:flex;flex-direction:column;gap:2px;flex:1;min-width:0;text-align:left}
+.link-title{font-size:15px;font-weight:700;letter-spacing:.1px;line-height:1.25}
+.link-sub{font-size:12px;color:var(--muted);letter-spacing:.1px;line-height:1.3}
+
+.link-arrow{font-size:16px;color:var(--cyan);flex-shrink:0;transition:transform .2s}
+.link-card:hover .link-arrow{transform:translateX(3px)}
+
+.primary{background:linear-gradient(135deg,rgba(123,47,247,.5),rgba(34,224,224,.3));border-color:var(--cyan);box-shadow:0 6px 24px rgba(123,47,247,.4)}
+.primary .link-icon{background:var(--white);color:var(--purple)}
+.primary:hover{background:linear-gradient(135deg,rgba(123,47,247,.65),rgba(34,224,224,.4))}
+
+.divider-label{
+  font-size:10px;font-weight:700;letter-spacing:3px;text-transform:uppercase;
+  color:var(--cyan);text-align:center;margin:16px 0 2px;
+  display:flex;align-items:center;gap:10px;
+}
+.divider-label::before,.divider-label::after{content:'';flex:1;height:1px;background:rgba(255,255,255,.2)}
+
+footer{margin-top:36px;text-align:center;position:relative;z-index:1}
+.ft-copy{font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:rgba(255,255,255,.45)}
+
+@keyframes fadeUp{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+
+@media(max-width:380px){
+  .links{max-width:300px}
+  .link-title{font-size:14px}
+}
+</style>
+</head>
+<body>
+
+<div class="profile">
+  <div class="profile-name">Official Anas's Links</div>
+  <div class="profile-tag">Founder, Nalon.sls</div>
+</div>
+
+<div class="links">
+
+  <a href="https://nalonsls.github.io/landing_page/" target="_blank" class="link-card primary">
+    <div class="link-icon">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+    </div>
+    <div class="link-text">
+      <div class="link-title">Nalon.sls — Main Site</div>
+      <div class="link-sub">Services, process & full overview</div>
+    </div>
+    <div class="link-arrow">→</div>
+  </a>
+
+  <a href="https://whop.com/nalon" target="_blank" class="link-card">
+    <div class="link-icon">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg>
+    </div>
+    <div class="link-text">
+      <div class="link-title">Free Guide</div>
+      <div class="link-sub">Stop Feeding the Algorithm — free on Whop</div>
+    </div>
+    <div class="link-arrow">→</div>
+  </a>
+
+  <a href="https://cal.com/nalon.-sls-rohnaw/creator-growth-strategy-call" target="_blank" class="link-card">
+    <div class="link-icon">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+    </div>
+    <div class="link-text">
+      <div class="link-title">Book a Free Call</div>
+      <div class="link-sub">30 minutes · No commitment</div>
+    </div>
+    <div class="link-arrow">→</div>
+  </a>
+
+  <div class="divider-label">Personal</div>
+
+  <a href="https://www.instagram.com/anasabduqaadir7" target="_blank" class="link-card">
+    <div class="link-icon">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+    </div>
+    <div class="link-text">
+      <div class="link-title">Instagram</div>
+      <div class="link-sub">@anasabduqaadir7</div>
+    </div>
+    <div class="link-arrow">→</div>
+  </a>
+
+  <a href="https://www.tiktok.com/@anas.abduqadir" target="_blank" class="link-card">
+    <div class="link-icon">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"/></svg>
+    </div>
+    <div class="link-text">
+      <div class="link-title">TikTok</div>
+      <div class="link-sub">@anas.abduqadir</div>
+    </div>
+    <div class="link-arrow">→</div>
+  </a>
+
+  <div class="divider-label">Follow the brand</div>
+
+  <a href="https://www.instagram.com/nalon.sls17" target="_blank" class="link-card">
+    <div class="link-icon">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+    </div>
+    <div class="link-text">
+      <div class="link-title">Instagram</div>
+      <div class="link-sub">@nalon.sls17</div>
+    </div>
+    <div class="link-arrow">→</div>
+  </a>
+
+  <a href="https://www.tiktok.com/@nalon.sls17" target="_blank" class="link-card">
+    <div class="link-icon">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"/></svg>
+    </div>
+    <div class="link-text">
+      <div class="link-title">TikTok</div>
+      <div class="link-sub">@nalon.sls17</div>
+    </div>
+    <div class="link-arrow">→</div>
+  </a>
+
+  <a href="https://www.facebook.com/share/1CbtFzRwz5/" target="_blank" class="link-card">
+    <div class="link-icon">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+    </div>
+    <div class="link-text">
+      <div class="link-title">Facebook</div>
+      <div class="link-sub">Nalon.sls</div>
+    </div>
+    <div class="link-arrow">→</div>
+  </a>
+
+  <div class="divider-label">Get in touch</div>
+
+  <a href="mailto:nalon.sls17@gmail.com" class="link-card">
+    <div class="link-icon">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 6 10 7 10-7"/></svg>
+    </div>
+    <div class="link-text">
+      <div class="link-title">Email</div>
+      <div class="link-sub">nalon.sls17@gmail.com</div>
+    </div>
+    <div class="link-arrow">→</div>
+  </a>
+
+</div>
+
+<footer>
+  <div class="ft-copy">© 2026 Anas Abduqaadir — Nalon.sls</div>
+</footer>
+
+</body>
+</html>
